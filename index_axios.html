@@ -19,11 +19,22 @@
 <body>
     <div id="app">
         <header>
-
+            <a href="http://localhost/php-ajax-dischi/index_axios.html">
+                <img src="./star.svg" alt="logo">
+            </a>
         </header>
         <main>
             <div class="container-lg ">
                 <div class="row my-margin">
+                    <div class="col-12 d-flex">
+                        <select name="genre" id="genres" v-model="selected">
+                            <option :value="genre" v-for="genre in genres">{{genre}}</option>
+                        </select>
+                        <a class="btn btn-primary" href="#" role="button" @click="APICallDiscs(selected)">Scegli</a>
+                        <a class="btn btn-danger" href="http://localhost/php-ajax-dischi/index_axios.html" role="button">Reset</a>
+                    </div>
+                </div>
+                <div class="row">
                     <div class="col-2 card pt-3 m-2" v-for="disc in discsList">
                         <div class="row">
                             <div class="col-12 img-container">
