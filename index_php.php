@@ -13,6 +13,11 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <?php
+       include __DIR__ . '/db/db.php';
+    ?>
+    <header>
+        
+    </header>
 </body>
 </html>
