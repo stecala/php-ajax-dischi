@@ -7,10 +7,22 @@
 
 body{
     background-color: var(--dark-color);
+    color: var(--text-dark);
 }
 
 header{
     width: 100%;
     height: 80px;
     background-color: var(--light-color);
+}
+
+.my-margin{
+    margin-top: 150px;
+}
+.card{
+    background-color: var(--light-color);
+    min-height: 400px;
+}
+.img-container>img{
+    width: 100%;
 }
