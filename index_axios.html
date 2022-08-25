@@ -19,8 +19,36 @@
 <body>
     <div id="app">
         <header>
-            
+
         </header>
+        <main>
+            <div class="container-lg ">
+                <div class="row my-margin">
+                    <div class="col-2 card pt-3 m-2" v-for="disc in discsList">
+                        <div class="row">
+                            <div class="col-12 img-container">
+                                <img :src="disc.poster" :alt="disc.title">
+                            </div>
+                            <div class="col-12 pt-3 text-center text-white">
+                                <h4>
+                                    {{disc.title}}
+                                </h4>
+                            </div>
+                            <div class="col-12 text-center pt-3 ">
+                                <h6>
+                                    {{disc.author}}
+                                </h6>
+                            </div>
+                            <div class="col-12 pt-1 text-center">
+                                <h6>
+                                    {{disc.year}}    
+                                </h6>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            </div>
+        </main>
     </div>
     <script src="./script/script.js"></script>
 </body>

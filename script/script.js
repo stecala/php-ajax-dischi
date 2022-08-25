@@ -12,7 +12,7 @@ const app = new Vue({
             console.log(this.discsList)
             })
             .catch((error)=>{
-            console.warn(error``)
+            console.error(error)
             })
         }
     },
